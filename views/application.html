@@ -1,0 +1,36 @@
+<div class="signTop" data-ng-controller="MainController" data-ng-init="retrieveUser()">
+    <div class="firstProfile">
+        <label class="profileLabel">First Name</label>
+        <input type="text" disabled class="profileVal" ng-value="profileInfo.fName">
+    </div>
+    <div class="profile">
+        <label class="profileLabel">Last Name</label>
+        <input type="text" disabled class="profileVal" ng-value="profileInfo.lName">
+    </div>
+    <div class="profile">
+        <label class="profileLabel">Email</label>
+        <input type="text" disabled class="profileVal" ng-value="profileInfo.email">
+    </div> 
+    <div class="balance">
+        <label class="profileLabel">Balance</label>
+        <input type="text" disabled class="profileVal" ng-value="profileInfo.balance">
+    </div> 
+     <div class="signout">
+        <button ng-click="logout()"> Sign Out</button>
+    </div>
+</div>
+<div class="signMiddle" data-ng-controller="MainController" data-ng-init="retrieveUser()">
+<!--
+    <table border="1">
+        <tr ng-repeat="data in allProfiles">
+            <td> {{data.fName}}</td>
+            <td> {{data.lName}}</td>
+            <td> {{data.email}}</td>
+            <td> {{data.balance}}</td>
+        </tr>
+    </table>
+-->
+</div>
+<div class="signFooter">
+    <p> Sampler Challenge &copy; 2016</p>
+</div>

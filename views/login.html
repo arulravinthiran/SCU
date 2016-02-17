@@ -1,0 +1,44 @@
+<form method="post">
+    <div class="signTop">
+        <div class="companyNameAtSignIn">
+            <h1> Sampler Challenge</h1>
+        </div>
+        <div class="signIn">
+            <label for="signInEmail" class="signInLabel">Email</label>
+            <input type="text" id="signInEmail" ng-model="loginInfo.username" required/>
+        </div>
+        <div class="signIn">
+            <label for="signInPassword" class="signInLabel">Password</label>
+            <input type="password" ng-model="loginInfo.password" id="signInPassword" required />
+        </div>
+        <div class="signInButtonOnly">
+            <button ng-click="loginUser()"> Log In</button>
+        </div>
+    </div>
+ </form>
+<form method="post">
+    <div class="signMiddle">
+        <div class="companyPromotionAtSignUp">
+            <h2> Transfer money to your loved ones with one click of a button! </h2>
+        </div>
+<!--        <form id="signUpForm" method="post">-->
+            <div class="signUp">
+                <h1 > Sign Up</h1>
+                <p>Earn 100$ as a reward for signing up!</p>
+                <input type="text" placeholder="First name" id="signUpfName" ng-model="signUpInfo.fName" required/>
+                <input type="text" placeholder="Last name" id="signUplName" ng-model="signUpInfo.lName" required/>
+                <input type="text" id="signUpEmail" placeholder="Email" class="signUpTexts" ng-model="signUpInfo.username" required/>
+                <input type="password" id="signUpPassword" placeholder="New Password: minimum 6 characters" ng-model="signUpInfo.password" 
+					required class="signUpTexts"/>
+                <input type="password" id="signUpPasswordR" placeholder="Re-enter Password" class="signUpTexts"
+                       ng-model="signUpInfo.passwordR" required/>
+                <button ng-click="signUserUp()"> Sign Up</button>
+            </div>
+<!--        </form>-->
+    </div>
+</form>
+    <div class="signFooter">
+        <p> Sampler Challenge &copy; 2016</p>
+    </div>
+
+<!--</div>-->
